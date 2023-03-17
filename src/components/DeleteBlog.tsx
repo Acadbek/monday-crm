@@ -1,7 +1,12 @@
 const DeleteBlog = () => {
+  const deleteTicket = () => {};
   return (
-    <div>DeleteBlog</div>
-  )
-}
+    <div className="delete-block">
+      <div onClick={deleteTicket} className="delete-icon">
+        x
+      </div>
+    </div>
+  );
+};
 
-export default DeleteBlog
+export default DeleteBlog;
