@@ -1,7 +1,11 @@
-const TicketPage = () => {
-  return (
-    <div>TicketPage</div>
-  )
-}
+import { PropsWithChildren } from "react";
 
-export default TicketPage
+type TicketPageProps = PropsWithChildren<{
+  editMode?: boolean;
+}>;
+
+const TicketPage = ({ editMode }: TicketPageProps) => {
+  return <div>TicketPage {editMode} </div>;
+};
+
+export default TicketPage;
